@@ -1,48 +1,19 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import HomeView from './views/HomeView.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-    <div class="wrapper">
-      <!-- <HelloWorld msg="Jutamanee!" /> -->
-      <HomeView />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="container mx-auto px-4">
+    <Header />
+    <HeroSection />
+    <PersonalInfo />
+    <SkillsSection />
+  </div>
 </template>
 
+<script lang="ts" setup>
+import HeroSection from './components/HeroSection.vue';
+import PersonalInfo from './components/PersonalInfo.vue';
+import SkillsSection from './components/SkillsSection.vue';
+import Header from './components/Header.vue';
+</script>
+
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+/* Custom animation styles if needed */
 </style>
