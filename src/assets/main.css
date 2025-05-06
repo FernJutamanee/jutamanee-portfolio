@@ -6,12 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
-#app {
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
-}
+} */
 
 a,
 .green {
@@ -28,7 +28,7 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
+  /* body {
     display: flex;
     place-items: center;
   }
@@ -37,5 +37,5 @@ a,
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
-  }
+  } */
 }
