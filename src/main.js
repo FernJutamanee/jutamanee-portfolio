@@ -8,5 +8,12 @@ import 'aos/dist/aos.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
-AOS.init()
-createApp(App).mount('#app')
+const app = createApp(App)
+
+// ✅ เรียก AOS.init() หลัง mount
+app.mount('#app')
+AOS.init({
+    duration: 800,       // ความเร็ว default
+    once: true,          // เล่นแค่ครั้งเดียวเมื่อ scroll
+    easing: 'ease-in-out',
+})
